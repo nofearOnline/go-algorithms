@@ -1,7 +1,5 @@
 package gcd
 
-import "fmt"
-
 // GCD stands for Greatest Common divisor
 func GCD(a, b int) (gd int) {
 	for a%b != 0 {
@@ -13,7 +11,6 @@ func GCD(a, b int) (gd int) {
 			b = a
 			a = r
 		}
-		fmt.Println(a, b, a%b)
 	}
 
 	return b
